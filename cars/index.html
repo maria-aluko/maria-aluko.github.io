@@ -30,23 +30,24 @@
     <form id="carForm">
       <div>
         <label for="licensePlate">License plate
-          <input type="text" id="licensePlate" name="licensePlate" required></label>
+          <input type="text" id="licensePlate" name="licensePlate"
+          maxlength="10" required></label>
       </div>
       <div>
         <label for="maker">Car make
-          <input type="text" id="maker" name="maker" required></label>
+          <input type="text" id="maker" name="maker" maxlength="18" required></label>
       </div>
       <div>
         <label for="model">Car model
-          <input type="text" id="model" name="model" required></label>
+          <input type="text" id="model" name="model" maxlength="25" required></label>
       </div>
       <div>
         <label for="currentOwner">Car owner
-          <input type="text" id="currentOwner" name="currentOwner" required></label>
+          <input type="text" id="currentOwner" name="currentOwner" maxlength="20" required></label>
       </div>
       <div>
         <label for="price">Car price
-          <input type="number" id="price" name="price" min="0" required></label>
+          <input type="number" id="price" name="price" min="0" max="2000000" required></label>
       </div>
       <div>
         <label for="color">Car color
