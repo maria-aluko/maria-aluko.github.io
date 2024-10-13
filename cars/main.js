@@ -30,6 +30,7 @@ function addNewCar(e) {
     const year = parseInt(document.getElementById('year').value.trim());
     let discountPrice = '';
 
+    // add discount
     const discountRate = 0.85;
     const date = new Date();
     let yearToday = date.getFullYear();
@@ -39,7 +40,7 @@ function addNewCar(e) {
     } else {
       discountPrice = 'No discount';
     }
-
+    // check for doubles
     const double = carArray.filter(car => licensePlate.toLowerCase().includes(car.licensePlate.toLowerCase()));
 
     if (double.length > 0) {
@@ -60,12 +61,12 @@ function addNewCar(e) {
     if (price <= 0) {
       throw new Error('Price must be a positive number');
     }
-
+    // add new can object with inputs and push to array
     const newCar = new Car(licensePlate, maker, model, currentOwner, price, color, year, discountPrice);
     carForm.reset();
     carArray.push(newCar);
     console.log(carArray);
-
+    // save in localStorage
     localStorage.setItem('carArray', JSON.stringify(carArray));
     createTable();
     displayMessage('Car added successfully!');
@@ -74,7 +75,7 @@ function addNewCar(e) {
     displayMessage(error.message, 'error');
   }
 }
-
+// if something is in localStorage, parse it and push to the array
 function loadFromLocalStorage() {
   const storedCarArray = localStorage.getItem('carArray');
   if (storedCarArray) {
@@ -89,16 +90,18 @@ function loadFromLocalStorage() {
 function createTable() {
   const table = document.querySelector('#carTable');
   table.innerHTML = table.rows[0].innerHTML;
+  // for each car object, create a row
   carArray.forEach((car, index) => {
     const row = table.insertRow(-1);
+    // deconstruct data
     const { licensePlate, maker, model, currentOwner, price, color, year, discountPrice } = car;
     const carInfo = [licensePlate, maker, model, currentOwner, price, color, year, discountPrice];
-
+    // for each car detail, create a cell and put the detail in it
     carInfo.forEach(info => {
       const cell = row.insertCell(-1);
       cell.textContent = info;
     });
-
+    // create delete button, add a class name, onclick delete, append the button to row
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('delete');
@@ -107,12 +110,12 @@ function createTable() {
     row.insertCell(-1).appendChild(deleteButton);
   });
 };
-
+// display, parameters are message and the class name
 function displayMessage(message, type = "success") {
   const messageDiv = document.getElementById('messageDiv');
   messageDiv.textContent = message;
   messageDiv.className = type;
-
+  // after 4seconds, set message and the class name to nothing
   setTimeout(function () {
     messageDiv.textContent = '';
     messageDiv.className = '';
