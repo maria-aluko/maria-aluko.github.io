@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <title>Portfolio - Maria Aluko</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="header-banner">
+        <img src="/images/logoWhite.png" alt="Logo" class="logo">
+        <nav>
+          <button class="mobile">Menu</button>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#footer-flex">Contact</a></li>
+            <button><a href="#footer-flex">Reach out</a></button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+<!-- Main section -->
+
+    <main>
+      <div class="main-container">
+
+        <div class="hero-banner">
+          <div class="welcome-text">
+            <p class="developer">Web Developer</p>
+            <h1 class="hero-header">Maria Aluko</h1>
+            <p>I transform ideas into digital realities.</p>
+            <button class="heroButton"><a href="#footer-flex">Reach out</a></button>
+          </div>
+        </div>
+
+        <section class="stacks">
+          <div class="divTitle">
+          <p>STACKS</p>
+          <h3>Technologies I work with</h3>
+          </div>
+          <div id="stackDisplay">
+            <div class="stack">
+              <img src="/images/Illustrator.svg">
+              <div class="progress half"></div>
+            </div>
+            <div class="stack">
+              <img src="/images/HTML.svg">
+                <div class="progress full"></div>
+            </div>
+            <div class="stack">
+              <img src="/images/CSS.svg">
+                <div class="progress"></div>
+            </div>
+            <div class="stack">
+              <img src="/images/JavaScript.svg">
+                <div class="progress"></div>
+            </div>
+            <div class="stack">
+              <img src="/images/React.svg">
+                <div class="progress quarter"></div>
+            </div>
+            <div class="stack">
+              <img src="/images/GitHub.svg">
+                <div class="progress half"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="divTitle">
+          <p>PROJECTS</p>
+          <h3>Check out some of my recent works</h3>
+         </div>
+          <div class="cards">
+            <div class="cardProject">
+              <div class="cardImg">
+                <img src="/images/pancake.jpg" alt="Coding Image" class="cards_image">
+              </div>
+              <div class="cardText">
+              <h3>Pancake Shop</h3>
+              </br>
+              <p>
+                <span class="roundedText">HTML</span>
+                <span class="roundedText">CSS</span>
+                <span class="roundedText">JavaScript</span>
+              </p>
+            </br>
+              <p>A functional pancake customization page that dynamically changes the price based on customer choices. Collecting customer information with delivery options. Pushing the order with order details into an array of orders.</p>
+            </br>
+              <p>
+              <a href="https://github.com/maria-aluko/maria-aluko.github.io/tree/main/pancake" target="_blank" class="roundedText git">GitHub repo</a>
+              <a href="https://maria-aluko.github.io/pancake/" target="_blank" class="cardsLink">Live preview ->
+              </a>
+              </p>
+              </div>
+            </div>
+            <div class="cardProject">
+              <div class="cardImg">
+              <img src="/images/cars.jpg" alt="Coding Image" class="cards_image">
+              </div>
+              <div class="cardText">
+              <h3>Car Database</h3>
+              </br>
+              <p>
+                <span class="roundedText">HTML</span>
+                <span class="roundedText">CSS</span>
+                <span class="roundedText">JavaScript</span>
+              </p>
+            </br>
+              <p>A car database page with error handling for input validation. Dynamically creating a table with the data from submitted form. Pushing the data into an array and storing it in localStorage. Search functionality by license plate number.</p>
+            </br>
+              <p>
+              <a href="https://github.com/maria-aluko/maria-aluko.github.io/tree/main/cars" target="_blank" class="roundedText git">GitHub repo</a>
+              <a href="https://maria-aluko.github.io/cars/" target="_blank" class="cardsLink">Live preview ->
+              </a>
+              </p>
+              </div>
+            </div>
+            <div class="cardProject">
+              <div class="cardImg">
+              <img src="/images/cats.jpg" alt="Coding Image" class="cards_image">
+              </div>
+              <div class="cardText">
+              <h3>API Fetch</h3>
+              </br>
+              <p>
+                <span class="roundedText">HTML</span>
+                <span class="roundedText">CSS</span>
+                <span class="roundedText">JavaScript</span>
+              </p>
+            </br>
+              <p>Fetching data from an API and displaying it on a website by creating cards for each object and displaying the data inside the card. Fetching images from a separate website and displaying these in each card.</p>
+            </br>
+              <p>
+              <a href="https://github.com/maria-aluko/maria-aluko.github.io/tree/main/persons" target="_blank" class="roundedText git">GitHub repo</a>
+              <a href="https://maria-aluko.github.io/persons/" target="_blank" class="cardsLink">Live preview ->
+              </a>
+              </p>
+              </div>
+            </div>
+            <a href="https://github.com/maria-aluko/" target="_blank">
+              <div id="linkToGH">More projects at GitHub</div>
+            </a>
+        </section>
+
+        <section id="gallery">
+          <div class="divTitle">
+          <p>GALLERY</p>
+          <h3>Created using Grid</h3>
+          </div>
+          <div id="grid">
+            <div class="pic"><img src="/grid/image1.jpg">></div>
+            <div class="pic"><img src="/grid/image2.jpg"></div>
+            <div class="pic"><img src="/grid/image3.jpg"></div>
+            <div class="pic"><img src="/grid/image4.jpg"></div>
+            <div class="pic"><img src="/grid/image5.jpg"></div>
+            <div class="pic"><img src="/grid/image6.jpg"></div>
+            <div class="pic"><img src="/grid/image7.jpg"></div>
+            <div class="pic"><img src="/grid/image8.jpg"></div>
+            <div class="pic"><img src="/grid/image9.jpg"></div>
+          </div>
+        </section>
+
+        <section id="aboutMe">
+          <div class="squares">
+            <div class="myInfo">
+              <h3>Hey, I'm Maria</h3>
+              <p>I'm currently studying Full Stack Development in Business College Helsinki. I will graduate in 2025 and I am open for interesting projects and positions.</p>
+            </br>
+              <p>I have 3 years of experience in Graphic Design and 2 years of experience in Financial Auditing. I have been a business owner for over 10 years.</p>
+            </br>
+              <p>In my free time, you can find me weightlifting in the gym, playing guitar or photographing our universe.</p>
+            </div>
+            <div class="myImg">
+              <div class="imageContainer">
+                <img src="/images/mina.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/maria-aluko-498a7a4b/" target="_blank">
+              <div class="socialBtn">
+                <img src="/images/linkedin.svg">
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/maria-aluko" target="_blank">
+              <div class="socialBtn">
+                <img src="/images/GitHub.svg">
+                <p>GitHub</p>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/maria_aluko/" target="_blank">
+              <div class="socialBtn">
+                <img src="/images/instagram.svg">
+                <p>Instagram</p>
+              </div>
+            </a>
+        </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div id="footer-flex">
+        <div class="footer-section">
+          <p>CONTACT ME</p>
+          <p class="footerText">If you have any questions or proposals, feel free to get in touch.</p>
+          <a href="mailto:maria.alukoo@gmail.com" target="_blank">
+            <div class="socialBtn">
+            <img src="/images/email.svg">
+            <p>E-mail</p>
+            </div>
+          </a>
+          <a href="https://wa.me/358407766454?text=Hi%20Maria!" target="_blank">
+            <div class="socialBtn">
+            <img src="/images/whatsapp.svg">
+            <p>WhatsApp</p>
+            </div>
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-form">
+          <form>
+            <label for="yourname">Name</label>
+            <input type="text" placeholder="Insert your name" name="yourname" id="yourname"> <br>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Insert your email" name="email" id="email"> <br>
+
+            <label for="message">Message</label>
+            <input type="text" placeholder="Write your message" name="message" id="message"> <br>
+
+            <button id="submitBtn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <p>&copy; 2024 Maria Aluko</p>
+      <button id="backTopBtn">&uarr;</button>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
