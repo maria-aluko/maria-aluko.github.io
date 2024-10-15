@@ -108,7 +108,7 @@ button:hover {
 /* Hero banner */
 .hero-banner {
   height: 60vh;
-  background: url(/images/banner.svg) no-repeat center center/cover;
+  background: url(./images/banner.svg) no-repeat center center/cover;
 }
 
 .welcome-text {
