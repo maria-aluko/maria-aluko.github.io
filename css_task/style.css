@@ -50,6 +50,7 @@ header {
   align-items: center;
   border: solid var(--grey4) 1px;
   border-radius: 50px;
+  z-index: 2;
 }
 
 .logo {
@@ -203,6 +204,7 @@ section {
   width: 70%;
   height: 100%;
   background-color:var(--orange-secondary);
+  z-index: 1;
 }
 
 .quarter::after {
