@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 30px;
+}
+
+.links {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 20px 10px;
+  background-color: rgb(0, 121, 250);
+  box-shadow: 4px 4px 4px rgb(218, 218, 218);
+  border-radius: 5px;
+  color: white;
+}
+
+a:hover {
+  color: white;
+  background-color: rgb(0, 84, 175);
+}
