@@ -37,7 +37,7 @@ header {
   height: 100px;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
 }
 
 .header-banner {
@@ -50,7 +50,7 @@ header {
   align-items: center;
   border: solid var(--grey4) 1px;
   border-radius: 50px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .logo {
@@ -204,7 +204,7 @@ section {
   width: 70%;
   height: 100%;
   background-color:var(--orange-secondary);
-  z-index: 1;
+  z-index: 0;
 }
 
 .quarter::after {
