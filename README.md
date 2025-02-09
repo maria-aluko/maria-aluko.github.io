@@ -1,2 +1,3 @@
 # maria-aluko.github.io
-The GitHub Pages
+
+First semester class projects visible at: https://maria-aluko.github.io/
